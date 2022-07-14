@@ -1,0 +1,39 @@
+local opt = vim.opt
+local wo = vim.wo
+local g = vim.g
+
+opt.termguicolors = true
+opt.number = true
+opt.relativenumber = true
+opt.errorbells = false
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.hidden = true
+opt.cursorline = true
+opt.incsearch = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.scrolloff = 8
+opt.signcolumn = 'yes'
+opt.colorcolumn = '100'
+opt.splitbelow = true
+opt.splitright = true
+opt.smartindent = true
+opt.autoindent = true
+opt.updatetime = 300
+opt.completeopt = 'menu,menuone,preview,noselect,longest'
+
+vim.g.material_style = "darker"
+vim.cmd('colorscheme material')
+vim.g.camelcasemotion_key = '<leader>'
+vim.g.loaded_netrwPlugin = 1
+vim.g.dart_format_on_save = 1
+vim.g.dartfmt_options = { '-l 100' }
+vim.g.code_action_menu_show_details = false
+vim.g.code_action_menu_show_diff = false
+vim.g.cursorhold_updatetime = 300
+vim.g.winresizer_vert_resize = 5
+vim.g.blamer_enabled = true
+vim.g.blamer_show_in_insert_modes = false
+vim.g.blamer_relative_time = true
