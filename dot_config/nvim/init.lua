@@ -68,6 +68,8 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
 Plug 'APZelos/blamer.nvim'
+Plug 'wfxr/minimap.vim'
+Plug 'folke/todo-comments.nvim'
 
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
@@ -94,13 +96,17 @@ nnoremap gR <cmd>TroubleToggle lsp_references<cr>
 " Fugitive git bindings
 nnoremap <leader>gg :Neogit<CR>
 nnoremap <leader>ga :Git add %:p<CR><CR>
+nnoremap <leader>gb <cmd>Telescope git_branches<CR>
+nnoremap <leader>gB <cmd>BlamerToggle<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :silent! Glog<CR>:bot copen<CR>
 nnoremap <leader>gp :Ggrep<Space>
 nnoremap <leader>gm :Gmove<Space>
-nnoremap <leader>gb <cmd>Telescope git_branches<CR>
 nnoremap <leader>gps :Dispatch! git push<CR>
 nnoremap <leader>gpl :Dispatch! git pull<CR>
+
+nnoremap <leader>M <cmd>MinimapToggle<CR>
+
 
 " spectre
 nnoremap <leader>S <cmd>lua require('spectre').open()<CR>
